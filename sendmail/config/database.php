@@ -63,6 +63,21 @@ return [
             ]) : [],
         ],
 
+        'mongodbcloud1' => [
+            'driver' => 'mongodb',
+            'dsn' => "mongodb+srv://thu:31257xxx@cluster0.m4jkl7y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+            'database' => 'laravelmongodb',
+          ],
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', 27017),
+            'database' => env('DB_DATABASE','mongodb'),
+            'username' => env('DB_USERNAME',''),
+            'password' => env('DB_PASSWORD',''),
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
